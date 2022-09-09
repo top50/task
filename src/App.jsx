@@ -9,10 +9,9 @@ function App() {
 
   useEffect(() => {
     const obtenerTareasLocalStorage = () => {
-      const tareasLocalStorage = JSON.parse(
-        localStorage.getItem("tareas") ?? []
-      );
-      setTareas(tareasLocalStorage);
+      const tareasLocalStorage = 
+      JSON.parse(localStorage.getItem("tareas")) ?? [];
+        setTareas(tareasLocalStorage);
     };
     obtenerTareasLocalStorage();
   }, []);
